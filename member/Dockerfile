@@ -5,6 +5,7 @@ COPY package*.json ./
 COPY package-lock.json ./
 RUN npm install --silent
 COPY . .
+RUN npm install -g typescript
 RUN npm run build
 
 # Stage 2: Serve the application using Nginx
