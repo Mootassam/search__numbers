@@ -6,8 +6,8 @@ COPY package-lock.json ./
 RUN npm install --silent
 COPY . .
 RUN npm install -g typescript
+RUN npm install -g vite
 RUN npm run build
-
 # Stage 2: Serve the application using Nginx
 FROM nginx
 COPY ./nginx.conf /etc/nginx/conf.d/default.conf
