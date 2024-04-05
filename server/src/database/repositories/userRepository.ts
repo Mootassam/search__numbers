@@ -495,6 +495,7 @@ export default class UserRepository {
           .populate('tenants.tenant'),
         options,
       );
+      
 
     const count =
       await MongooseRepository.wrapWithSessionIfExists(
