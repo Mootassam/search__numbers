@@ -6,7 +6,7 @@ import Qs from 'qs';
 import moment from 'moment';
 
 const authAxios = Axios.create({
-  baseURL: 'http://172.105.84.153:8080/api',
+  baseURL: 'http://localhost:8080/api',
   // baseURL: 'http://localhost:8080/api',
   // baseURL: 'https://serverhongkong.onrender.com/api',
   paramsSerializer: function (params) {
